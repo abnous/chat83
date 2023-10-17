@@ -1,0 +1,328 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: Julius Sans One;
+    font-size: 13px;
+    line-height: 1.58;
+    color: #ececec88;
+    background-color: #ffffff;
+    height: 100%;
+}   
+h1.title {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 29px;
+    mix-blend-mode: hard-light;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal; 
+}
+
+#usernameForm .form-group {
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.hidden {
+    display: none;
+}
+
+.form-control {
+    width: 70%;
+    min-height: 25px;
+    font-size: 11px;
+    font-family: monospace;
+    border-radius: 100px;
+    border: 1px solid #a8a8a87d;
+}
+
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+input {
+    padding-left: 10px;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.7em;
+}
+
+a {
+    color: #3227cd;
+}
+
+button {
+    box-shadow: none;
+    border: 1px solid transparent;
+    font-size: 13px;
+    font-family: 'Bellota Text', sans-serif;
+    outline: none;
+    line-height: 100%;
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0.4rem 0.8rem;
+    border-radius: 100px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    min-height: 0px;
+}
+
+button.default {
+    background-color: #862595;
+    color: #333;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+button.primary {
+    border-radius: 100px;
+    background: linear-gradient(180deg, #14AFA6 0%, #0CD6D6 0.01%, rgba(14, 136, 129, 0.01) 1000%);
+    color: #fff;
+    font-family: 'Digital Numbers', sans-serif;
+    font-size: 10px;
+    width: 103px;
+    height: 50px;
+    flex-shrink: 0;
+}
+
+button.accent {
+    background-color: #0080ff;
+    box-shadow: 0 0 1px #fff, 0 0 5px #0099ff, 0 0 9px #0099ff, 0 0 13px #0099ff, 0 0 17px #0099ff, 0 0 21px #0099ff, 0 0 25px #0099ff;
+    color: #ffffff;
+}
+
+#username-page {
+    text-align: center;
+}
+
+.username-page-container {
+    background: #000000;
+    box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+    border-radius: 2px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center;     /* Vertically center */
+    flex-direction: column;  /* Stack children vertically */
+    padding: 35px 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
+
+.username-page-container .username-submit {
+    margin-top: 10px;
+}
+
+
+#chat-page {
+    position: relative;
+    height: 100%;
+}
+
+.chat-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    box-shadow: 0 1px 11px rgba(202, 0, 0, 0.27);
+    margin: 0;
+    max-height: none;
+    position: relative;
+}
+
+#chat-page ul {
+    list-style-type: none;
+    background-color: #0000008c;
+    margin: 0;
+    overflow: auto;
+    overflow-y: scroll;
+    padding: 0 20px 0px 20px;
+    height: calc(100% - 150px);
+}
+
+#chat-page #messageForm {
+    padding: 20px;
+}
+
+#chat-page ul li {
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid #070707c3;
+}
+
+#chat-page ul li p {
+    margin: 0;
+}
+
+#chat-page .event-message {
+    width: 100%;
+    text-align: center;
+    clear: both;
+}
+
+#chat-page .event-message p {
+    color: #4eea8275;
+    font-size: 14px;
+    word-wrap: break-word;
+    font-family: monospace;
+}
+
+#chat-page .chat-message {
+    padding-left: 68px;
+    position: relative;
+}
+
+#chat-page .chat-message i {
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    overflow: hidden;
+    left: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    line-height: 42px;
+    color: #1456d0;
+    text-align: center;
+    border-radius: 50%;
+    font-style: normal;
+    text-transform: uppercase;
+    flex-shrink: 0; 
+    background: url('profileapp.png'), lightgray 50% / cover no-repeat;
+    background-size: 70px 70px;
+    background-position: center;
+}
+
+
+
+#chat-page .chat-message span {
+    color: #b7b7b77e;
+    font-weight: 300;
+}
+
+#chat-page .chat-message p {
+    color: #d4d4d4b5;
+}
+
+#messageForm .input-group input {
+    float: left;
+    width: calc(100% - 85px);
+    height: 38px;
+}
+
+#messageForm .input-group button {
+    float: left;
+    width: 80px;
+    height: 38px;
+    margin-left: 5px;
+}
+
+.chat-header {
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid #000000;
+}
+
+.chat-header h2 {
+    margin: 0;
+    font-weight: 500;
+    color:#ffffff5d ;
+    font-family: 'Digital Numbers', sans-serif;
+}
+#message {
+    background-color: #000000;
+    color: #fffefe;
+}
+#name {
+    background-color: #f1f1f118;
+    color: #fffafa;
+    width: 250px;
+    height: 35px;
+    flex-shrink: 0;
+}
+
+
+.connecting {
+    padding-top: 5px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+}
+
+
+@media screen and (max-width: 730px) {
+
+    .chat-container {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .chat-container {
+        height: calc(100% - 30px);
+    }
+
+    .username-page-container {
+        width: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+        padding: 25px;
+    }
+
+    #chat-page ul {
+        height: calc(100% - 120px);
+    }
+
+    #messageForm .input-group button {
+        width: 65px;
+    }
+
+    #messageForm .input-group input {
+        width: calc(100% - 70px);
+    }
+
+    .chat-header {
+        padding: 10px;
+    }
+
+    .connecting {
+        top: 60px;
+    }
+
+    .chat-header h2 {
+        font-size: 1.1em;
+    }
+}
